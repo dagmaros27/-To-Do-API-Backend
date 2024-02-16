@@ -7,10 +7,10 @@ const {
   deleteTask,
 } = require("../controller/taskContoller");
 
-router.post("/tasks", addTask);
-router.get("/tasks", getTask);
-router.get("/tasks/:id", getTaskById);
-router.put("/tasks/:id", updateTask);
-router.delete("/tasks/:id", deleteTask);
+router.post("/", addTask);
+router.get("/", getTask);
+router.get("/:id", getTaskById);
+router.put("/:id", updateTask);
+router.delete("/:id", deleteTask);
 
 module.exports = router;
